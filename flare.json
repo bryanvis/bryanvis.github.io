@@ -1,0 +1,75 @@
+{
+ "name": "",
+ "children": [
+  {
+   "name": "Women",
+   "children": [
+     {"name": "Admitted",
+     "children":[
+         {"name": "Enrolled", "size":636},
+         {"name":"Left", "size":310},
+          {"name": "Waitlisted", 
+        "children":[
+            {"name": "Stayed", 
+            "children": [
+                {"name": "Accepted!", 
+                "children":[
+                    {"name":"Bryan Chen :)" , "size": 1},
+                    {"name": "His classmates", "size": 8}
+                ]
+                },
+                {"name": "Rejected", "size": 411}
+            ]
+            },
+            {"name": "Left", "size": 198.5}
+        ]}
+         
+     ]
+     },
+    {"name": "Rejected",  "children":[
+                {"name":"Rejected",
+                "children":[
+                    {"name":"Rejected", "size":14192}
+                ]
+                }
+            ]}
+   ]
+  },
+  {
+   "name": "Men",
+   "children": [
+    {"name": "Admitted", 
+    "children":[
+         {"name": "Enrolled", "size":670},
+         {"name":"Left", "size":295},
+         {"name": "Waitlisted", 
+        "children":[
+            {"name": "Stayed", 
+            "children": [
+                {"name": "Accepted!", 
+                "children":[
+                    {"name":"Bryan Chen :)" , "size": 1},
+                    {"name": "His classmates", "size": 8}
+                ]
+                },
+                {"name": "Rejected", "size": 411}
+            ]
+            },
+            {"name": "Left", "size": 198.5}
+        ]
+        }
+    ]
+    },
+    {"name": "Rejected",
+     "children":[
+                {"name":"Rejected",
+                "children":[
+                    {"name":"Rejected", "size":14192}
+                ]
+                }
+            ]
+    }
+   ]
+  }
+ ]
+}
