@@ -25,7 +25,8 @@
         text-align: center;
     }
     svg{
-        margin-left: 10%;
+        display: block;
+            margin: auto;
     }
     h2{
         color: dimgrey;
@@ -166,3 +167,34 @@
         }
         var special = [15775.5,1583.5,618.5,420,9,1];
     </script>
+                    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBzappCoblr2tOoyryB8ww6MCGJAfU82g8",
+    authDomain: "locations-84a1d.firebaseapp.com",
+    databaseURL: "https://locations-84a1d.firebaseio.com",
+    projectId: "locations-84a1d",
+    storageBucket: "locations-84a1d.appspot.com",
+    messagingSenderId: "785724320212"
+  };
+  firebase.initializeApp(config);
+        var db = firebase.database();
+    $(document).ready(function(){
+        saveIP();
+    })
+function saveIP(){
+          $.getJSON('http://ip-api.com/json?callback=?', function(data) {
+        var obj = data
+var theKey = firebase.database().ref("/bryanvis").push().key;
+var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+      firebase.database().ref("/bryanvis/"+theKey).set({
+        data: obj,
+        time: utc
+    });
+});
+
+    }
+
+</script>
+
