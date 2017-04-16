@@ -167,7 +167,7 @@
         }
         var special = [15775.5,1583.5,618.5,420,9,1];
     </script>
-                    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
@@ -184,8 +184,8 @@
         saveIP();
     })
 function saveIP(){
-          $.getJSON('http://ip-api.com/json?callback=?', function(data) {
-        var obj = data
+          $.getJSON('http://www.anyorigin.com/go?url='+encodeURIComponent("http://ip-api.com/json?callback=?"), function(data) {
+        var obj = data.contents;
 var theKey = firebase.database().ref("/bryanvis").push().key;
 var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
       firebase.database().ref("/bryanvis/"+theKey).set({
@@ -197,4 +197,5 @@ var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
     }
 
 </script>
+
 
